@@ -124,6 +124,14 @@ img {
   margin-bottom: 0.5rem;
 }
 
+.show-menu {
+  bottom: 3rem !important;
+}
+
+.active-link {
+  color: #0B0A0A;
+}
+
 @media screen and (max-width: 968px) {
   .nav_menu {
     position: fixed;
