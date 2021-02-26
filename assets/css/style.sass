@@ -1,2 +1,84 @@
-@import "reset"
 @import "var"
+@import "reset"
+
+@mixin calc($key, $value)
+  #{$key}: -webkit-calc(#{$value})
+  #{$key}: -moz-calc(#{$value})
+  #{$key}: calc(#{$value})
+
+.bd-container
+  max-width: 968px
+  @include calc("width", "100% - 3rem")
+  margin-left: $mb-3
+  margin-right: $mb-3
+
+.bd-grid
+  display: grid
+  gap: 1.5rem
+
+.l-header
+  width: 100%
+  position: fixed
+  bottom: 0
+  left: 0
+  z-index: $z-fixed
+  background-color: $body-color
+  box-shadow: 0 -1px 4px rgba(0,0,0,.1)
+  transition: .3s
+
+.nav
+  height: $header-height
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.nav_logo,
+.nav_toggle
+  color: $title_color
+  font-weight: $font-medium
+
+.nav_toggle
+
+  font-size: 1.2rem
+  cursor: pointer
+
+.nav_item
+  text-align: center
+
+.nav_list
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  gap: 2rem
+
+.nav_link
+  display: flex
+  flex-direction: column
+  font-size: $smaller-font-size
+  font-weight: $font-medium
+  color: $text-color-light
+
+.nav_link:hover
+  color: $title_color
+
+.nav_icon
+  font-size: 1.2rem
+  margin-bottom: $mb-1
+
+
+
+
+
+
+
+@media screen and (max-width: 968px)
+  .nav_menu
+    position: fixed
+    bottom: -100%
+    left: 0
+    width: 100%
+    padding: 2rem 1.5rem
+    background-color: $body-color
+    box-shadow: 0 1px 4px rgba(0,0,0,.1)
+    border-radius: 1rem 1rem 0 0
+    z-index: $z-fixed
+    transition: .3s
