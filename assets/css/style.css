@@ -132,6 +132,67 @@ img {
   color: #0B0A0A;
 }
 
+.home {
+  position: relative;
+}
+
+.home_container {
+  gap: 3rem;
+}
+
+.home_data {
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.home_img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  justify-self: center;
+  margin-bottom: 0.5rem;
+}
+
+.home_title {
+  font-size: 1.5rem;
+}
+
+.home_profession {
+  font-size: 0.938rem;
+  margin-bottom: 0.5rem;
+}
+
+.home_address {
+  gap: 1rem;
+}
+
+.home_information {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+.home_icon {
+  font-size: 1.2rem;
+  margin-right: 0.25rem;
+}
+
+.home_button-movil {
+  display: inline-block;
+  border: 2px solid #403A3A;
+  color: #0B0A0A;
+  padding: 1rem 2rem;
+  border-radius: 0.25rem;
+  transition: 0.3s;
+  font-weight: 500;
+  margin-top: 1.5rem;
+}
+
+.home_button-movil:hover {
+  background-color: #403A3A;
+  color: #FAFAFA;
+}
+
 @media screen and (max-width: 968px) {
   .nav_menu {
     position: fixed;
