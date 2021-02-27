@@ -242,7 +242,17 @@
   visibility: visible
   bottom: 5rem
 
+.generate-pdf
+  display: none
+  position: absolute
+  top: 2.2rem
+  left: 0
+  font-size: 1.2rem
+  color: $text-color
+  cursor: pointer
 
+.generate-pdf:hover
+  color: $title-color
 
 @media screen and (max-width: 968px)
   .nav_menu
@@ -293,6 +303,9 @@
 
   .home_container
     gap: 1.5rem
+
+  .generate-pdf
+    display: inline-block
 
   .home_button-movil
     display: none

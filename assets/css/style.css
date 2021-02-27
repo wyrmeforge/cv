@@ -22,7 +22,6 @@ body {
   background-color: #FCFCFC;
   color: #403A3A;
 }
-
 h1, h2, h3, ul, p {
   margin: 0;
 }
@@ -47,7 +46,7 @@ img {
 }
 
 .section {
-  padding: 1.5rem 0px;
+  padding: 1.5rem 0;
 }
 
 .section-title {
@@ -365,6 +364,20 @@ img {
   bottom: 5rem;
 }
 
+.generate-pdf {
+  display: none;
+  position: absolute;
+  top: 2.2rem;
+  left: 0;
+  font-size: 1.2rem;
+  color: #403A3A;
+  cursor: pointer;
+}
+
+.generate-pdf:hover {
+  color: #0B0A0A;
+}
+
 @media screen and (max-width: 968px) {
   .nav_menu {
     position: fixed;
@@ -423,6 +436,10 @@ img {
 
   .home_container {
     gap: 1.5rem;
+  }
+
+  .generate-pdf {
+    display: inline-block;
   }
 
   .home_button-movil {
