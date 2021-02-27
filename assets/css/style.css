@@ -261,27 +261,36 @@ img {
   font-size: 0.813rem;
 }
 
-.skills_content {
+.skills_content,
+.languages_content {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.skills_content {
+.skills_content,
+.languages_content {
   gap: 0;
 }
 
-.skills_name {
+.skills_name,
+.languages_name {
   display: flex;
   align-items: center;
   margin-bottom: 1.5rem;
 }
 
-.skills_circle {
+.skills_circle,
+.languages_circle {
   display: inline-block;
   width: 5px;
   height: 5px;
   background-color: #403A3A;
   border-radius: 50%;
   margin-right: 0.75rem;
+}
+
+.certificate_title {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 @media screen and (max-width: 968px) {

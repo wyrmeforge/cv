@@ -174,18 +174,22 @@
 .education_year
   font-size: $smaller-font-size
 
-.skills_content
+.skills_content,
+.languages_content
   grid-template-columns: repeat(2, 1fr)
 
-.skills_content
+.skills_content,
+.languages_content
   gap: 0
 
-.skills_name
+.skills_name,
+.languages_name
   display:  flex
   align-items: center
   margin-bottom: $mb-3
   
-.skills_circle
+.skills_circle,
+.languages_circle
   display: inline-block
   width: 5px
   height: 5px
@@ -193,7 +197,9 @@
   border-radius: 50%
   margin-right: .75rem
 
-
+.certificate_title
+  font-size: $h3-font-size
+  margin-bottom: $mb-1
 
 
 @media screen and (max-width: 968px)
