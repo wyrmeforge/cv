@@ -1,5 +1,6 @@
 @import "var"
 @import "reset"
+@import "theme"
 
 @mixin calc($key, $value)
   #{$key}: -webkit-calc(#{$value})
@@ -139,13 +140,16 @@
 .profile_description
   text-align: center
 
-.education_content
+.education_content,
+.certificate_content
   display: flex
 
-.education_time
+.education_time,
+.certificate_time
   padding-right: 1rem
 
-.education_rounder
+.education_rounder,
+.certificate_rounder
   position: relative
   display: block
   width: 16px
@@ -154,7 +158,8 @@
   border-radius: 50%
   margin-right: .25rem
 
-.education_line
+.education_line,
+.certificate_line
   display: block
   width: 2px
   height: 110%
@@ -239,14 +244,6 @@
 
 
 
-
-
-
-
-
-
-
-
 @media screen and (max-width: 968px)
   .nav_menu
     position: fixed
@@ -259,3 +256,51 @@
     border-radius: 1rem 1rem 0 0
     z-index: $z-fixed
     transition: .3s
+
+@media  screen and (max-width: 320px)
+  .nav_list
+    grid-template-columns: repeat(2, 1fr)
+    gap: 1rem .5rem
+
+@media screen and (min-width: 968px)
+  body
+    margin: 3rem 0
+
+  .bd-container
+    margin-left: auto
+    margin-right: auto
+
+  .l-header,
+  .scrolltop
+    display: none
+
+  .resume
+    display: grid
+    grid-template-columns: .5fr 1fr
+    background-color: $container_color
+    box-shadow: 0 0 8px rgba(13,12,12,.15)
+
+  .resume_left
+    background-color: $container-color-alt
+
+  .resume_left,
+  .resume_right
+    padding: 0 1.5rem
+
+  .section-title,
+  .profile_description
+    text-align: initial
+
+  .home_container
+    gap: 1.5rem
+
+  .home_button-movil
+    display: none
+
+  .languages_content
+    grid-template-columns: repeat(3, max-content)
+    column-gap: 3.5rem
+
+  .interests_container
+    grid-template-columns: repeat(5, max-content)
+    column-gap: 3.5rem
