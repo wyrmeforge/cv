@@ -193,6 +193,31 @@ img {
   color: #FAFAFA;
 }
 
+.social_container {
+  grid-template-columns: max-content;
+  gap: 1rem;
+}
+
+.social_link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.875rem;
+  color: #403A3A;
+}
+
+.social_link:hover {
+  color: #0B0A0A;
+}
+
+.social_icon {
+  font-size: 1.2rem;
+  margin-right: 0.25rem;
+}
+
+.profile_description {
+  text-align: center;
+}
+
 @media screen and (max-width: 968px) {
   .nav_menu {
     position: fixed;
